@@ -1,0 +1,20 @@
+.chat-side
+  .chat-side__side-header
+    .chat-side__side-header__box
+      %p.chat-side__side-header__box__user-name
+        kkk
+      %ul.chat-side__side-header__box__menu
+        %li.chat-side__side-header__box__edit
+          = link_to "#",class:"edit" do
+            = icon('fas','edit')
+        %li.chat-side__side-header__box__new-group
+          = link_to "#",class:"new-group" do
+            =icon('fas','cog')
+  .chat-side__group
+    = link_to "#",class:"group" do
+      %p.chat-side__group__name
+        text
+      %p.chat-side__group__message
+        まだメッセージがありません
+
+  
