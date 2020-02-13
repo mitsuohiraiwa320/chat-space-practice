@@ -1,0 +1,31 @@
+.main-chat
+  .main-chat__main-header
+    .main-chat__main-header__box
+      .main-chat__main-header__box__left-box
+        %h2.main-chat__main-header__box__left-box__group
+          lll
+        %ul.main-chat__main-header__box__left-box__list
+          member：
+          %li.main-chat__main-header__box__left-box__list__name
+            ppp
+      %p.main-chat__main-header__box__right
+        = link_to "#",class:"edit" do
+          Edit
+  .main-chat__messages
+    .main-chat__messages__message
+      .main-chat__messages__message__info
+        %p.main-chat__messages__message__info__name
+          kkk
+        %p.main-chat__messages__message__info__date
+          2020/02/13(Thu)
+          11:48:22
+      %p.main-chat__messages__message__info__text
+        わかるかも
+  .main-chat__form
+    %form.new-message
+      .input-box
+        %input{type:"text",class:"input-box__text",placeholder:"type a message"}
+        %label{class:"input-box__image"}
+          = icon('fas','image')
+          %input{type:"file",class:"input-box__image__file"}
+      %input{type:"submit",class:"submit-btn"}
