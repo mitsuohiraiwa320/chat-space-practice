@@ -5,16 +5,16 @@
         = current_user.name
       %ul.chat-side__side-header__box__menu
         %li.chat-side__side-header__box__edit
-          = link_to "#",class:"edit" do
+          = link_to new_group_path,class:"edit" do
             = icon('fas','edit')
         %li.chat-side__side-header__box__new-group
           = link_to edit_user_path(current_user),class:"new-group" do
             =icon('fas','cog',)
   .chat-side__group
-    = link_to "#",class:"group" do
-      %p.chat-side__group__name
-        text
-      %p.chat-side__group__message
-        まだメッセージがありません
-
-  
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
