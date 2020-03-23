@@ -1,4 +1,4 @@
-$(function() {
+$(function() {    
   function addUser(user) {
     let html = `
       <div class="chat-group-user clearfix">
