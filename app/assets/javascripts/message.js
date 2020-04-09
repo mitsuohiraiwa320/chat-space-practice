@@ -51,16 +51,19 @@ $(function(){
       processData: false,
       contentType: false
     })
-     .done(function(data){
+    .done(function(data){
        var html = buildHTML(data);
        $('.main-chat__messages').append(html);
        $('.main-chat__messages').animate({ scrollTop: $('.main-chat__messages')[0].scrollHeight});
        $('form')[0].reset();
-     })
-     .fail(function() {
+    })
+    .fail(function() {
        alert("メッセージ送信に失敗しました");
-      })
-    });
+    })
+    .always(function(data){
+      $('.submit-btn').prop('disabled', false);
+    })
+  });
   var reloadMessages = function() {
     var last_message_id = $('.message:last').data("message-id");
     $.ajax({
