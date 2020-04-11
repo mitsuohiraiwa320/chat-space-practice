@@ -3,7 +3,7 @@
 }
 .chat-side {
   width: 300px;
-  color: rgb(253, 226, 226);
+  color: white;
   float: left;
   height: 100vh;
   background-color: #2f3e51;
@@ -98,10 +98,10 @@
     overflow: scroll;
     &__message {
       padding-bottom: 40px;
-      &__info {
+      &__upper-message {
         display: flex;
         margin-bottom: 10px;
-        &__name {
+        &__user-name {
           color: #434a54;
           font-size: 16px;
           font-weight: bold;
@@ -136,8 +136,6 @@
           top: 10px;
           right: 130px;
           cursor: pointer;
-        }
-        .message_content_image {
         }
       .submit-btn {
         width: 100px;
