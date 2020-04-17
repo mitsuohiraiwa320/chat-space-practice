@@ -31,16 +31,18 @@
   &__group {
     background-color: #2f3e51;
     padding: 20px;
-    a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-bottom: 40px;
-    }
-    &__name {
-      font-size: 15px;
-    }
-    &__message {
-      font-size: 11px;
+    .group  {
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-bottom: 5px;
+      }
+        &__name {
+        font-size: 15px;
+        }
+        &__message { 
+        font-size: 11px;  
+        }
     }
   }
 }
@@ -73,7 +75,6 @@
           display: flex;
           color: #999999;
           list-style: none;
-
         }
       }
       &__right {
@@ -96,9 +97,9 @@
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
-    &__message {
+    .message {
       padding-bottom: 40px;
-      &__upper-message {
+      .upper-message {
         display: flex;
         margin-bottom: 10px;
         &__user-name {
@@ -109,14 +110,15 @@
         &__date {
           color: #999999;
           font-size: 12px;
-          margin-left: 10px;
-        }
-        &__text {
-          color: #434a54;
-          font-size: 14px;
-          margin-bottom: 10px;
+          padding-left: 10px;
         }
       }
+      .lower-message {
+        color: #434a54;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+      }      
     }
   }
   &__form {
